@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.poppings{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.branco{
+    color: white;
+    fill: white;
+}
+.amarelo{
+    color: #fcdc00;
+    fill: #fcdc00;
+}
+#banner{
+    background-image: url(home-banner.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 95vb;
+    display: flex;
+}
+header{
+    background-color: rgba(0,0,0, 50%);
+    width: 100vw;
+    height: 10vb;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+header img{
+    width: auto;
+    height: 3vb;
+}
+#organizer{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav{
+    width: 40%;
+    height: 4vb;
+}
+ul{
+    width: 100%;
+    margin: 0;
+    margin-top:1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+#search{
+    height: 1vb;
+    margin-top: 0.5%;
+}
+#banner > div{
+    position: absolute;
+    width: 30%;
+    background-color: black;
+    height: 25vb;
+    justify-self: center;
+    align-self: center;
+    left: 35%;
+    
+}
+#banner > div h1{
+    margin-top: 7%;
+    font-weight: 5;
+    text-align: center;
+}
+#banner > div p{
+    text-align: center;
+    margin: 0 5%;
+}
+#banner > div a{
+    position: relative;
+    top: 30%;
+    left: 33%;
+    background-color: #fcdc00;
+    color: black;
+    padding: 2% 5%;
+    font-size: 0.8rem;
+}
