@@ -101,7 +101,7 @@ ul{
 
 }
 #searchBar{
-    width: 80vw;
+    width: 60vw;
     height: 6vb;
     border:rgba(128, 128, 128, 25%) solid 1px;
     background-color: white;
@@ -120,28 +120,82 @@ ul{
 #search-btn-all{
     border-left: rgba(128, 128, 128, 25%) solid 1px;
     width: 6%;
+    transition: all 0.5s;
 }
 #search-btn{
     width: 9%;
+    transition: all 1s;
 }
 .radio-search{
     position: absolute;
-    left: 48.5%;
     width: 9%;
     height: 100%;
     margin: 0;
     cursor: pointer;
-    opacity: 0.1;
-
+    opacity: 0;
 }
-.radio-search:checked ~ #space{
-    background-color: #f9f9ff;
+.radio-search:first-of-type{
+    left: 33.5%;
+    width: 6%;
 }
-
-#space{
-    width: 10vw;
-    height: 100vb;
+.radio-search:nth-of-type(2){
+    left: 39.5%;
+}
+.radio-search:nth-of-type(3){
+    left: 48.5%;
+}
+.radio-search:nth-of-type(4){
+    left: 57.5%;
+}
+.radio-search:first-of-type:checked ~ #search-btn-all{
     background-color: #fcdc00;
+}
+.radio-search:nth-of-type(2):checked ~ #search-btn:nth-of-type(2){
+    background-color: #fcdc00;
+}
+.radio-search:nth-of-type(3):checked ~ #search-btn:nth-of-type(3){
+    background-color: #fcdc00;
+}
+.radio-search:nth-of-type(4):checked ~ #search-btn:nth-of-type(4){
+    background-color: #fcdc00;
+}
+.radio-search:first-of-type:hover ~ #search-btn-all{
+    background-color: #fcdc00;
+}
+.radio-search:nth-of-type(2):hover ~ #search-btn:nth-of-type(2){
+    background-color: #fcdc00;
+}
+.radio-search:nth-of-type(3):hover ~ #search-btn:nth-of-type(3){
+    background-color: #fcdc00;
+}
+.radio-search:nth-of-type(4):hover ~ #search-btn:nth-of-type(4){
+    background-color: #fcdc00;
+}
+
+#fotos{
+    width: 85vw;
     position: absolute;
-    margin-top: 5%;
+    display: flex;
+    margin-top: 8%;
+    flex-wrap: wrap;
+    transition: all 1s;
+}
+#fotos img{
+    height: 45vb;
+    margin: 1%;
+    transition: all 1s;
+    display: none;
+}
+
+.radio-search:first-of-type:checked ~ #fotos img{
+    display: block;
+}
+.radio-search:nth-of-type(2):checked ~ #fotos .aprov{
+    display: block;
+}
+.radio-search:nth-of-type(3):checked ~ #fotos .unaprov{
+    display: block;
+}
+.radio-search:nth-of-type(4):checked ~ #fotos .unviw{
+    display: block;
 }
