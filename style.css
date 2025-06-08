@@ -19,6 +19,10 @@ a{
     color: #fcdc00;
     fill: #fcdc00;
 }
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
 #banner{
     background-image: url(home-banner.jpg);
     background-repeat: no-repeat;
@@ -182,9 +186,10 @@ ul{
 }
 #fotos img{
     height: 45vb;
-    margin: 1%;
+    margin: 11px;
     transition: all 1s;
     display: none;
+    transition: all 0.3s;
 }
 
 .radio-search:first-of-type:checked ~ #fotos img{
@@ -198,4 +203,63 @@ ul{
 }
 .radio-search:nth-of-type(4):checked ~ #fotos .unviw{
     display: block;
+}
+
+#fotos div{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    border: none;
+}
+#fotos i{
+    position: absolute;
+    top: 80%;
+    font-size: 1.9rem;
+    left: 45%;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s;
+}
+#fotos h1{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 15%;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+#fotos div:hover img{
+    filter: brightness(50%);
+}
+#fotos div:hover h1{
+    transform: translateY(-55%);
+}
+#fotos div:hover i{
+    transform: translateY(-250%);
+    opacity: 1;
+}
+#load-div{
+    margin-top: 75%;
+}
+#load-div article{
+    width: 11%;
+    position: relative;
+    height: 5vb;
+    text-align: center;
+    display: block;
+    background-color: #fcdc00;
+}
+#btn-load{
+    position: absolute;
+    color: #000000;
+    font-size: 0.8rem;
+    display: block;
+    left: 20%;
+    top: 30%;
+}
+#spc{
+    height: 150vb;
+    width: 100%;
+    display: block;
+    z-index: -2;
 }
