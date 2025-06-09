@@ -26,6 +26,7 @@ a{
 #banner{
     background-image: url(home-banner.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 95vb;
     display: flex;
@@ -252,10 +253,26 @@ ul{
 #btn-load{
     position: absolute;
     color: #000000;
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: block;
-    left: 20%;
-    top: 30%;
+    left: 15%;
+    top: 32%;
+}
+#sec-feed{
+    margin-top: 7%;
+    background-color: #fcdc00;
+    width: 100vw;
+    height: 50vb;
+}
+#sec-feed div{
+    padding: 5% 10%;
+    width: 40%;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+#sec-feed div h1{
+    font-weight: 900;
+    font-size: 3rem;
 }
 #spc{
     height: 150vb;
