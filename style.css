@@ -36,6 +36,21 @@ a{
     display: flex;
     margin-bottom: 5%;
 }
+#bannerm{
+    background-image: url(home-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 45vb;
+    display: flex;
+}
+#bannerm h1{
+    position: absolute;
+    top: 20%;
+    color: white;
+    left: 43%;
+    font-size: 3rem;
+}
 header{
     background-color: rgba(0,0,0, 50%);
     width: 100vw;
@@ -58,6 +73,12 @@ header img{
 nav{
     width: 40%;
     height: 4vb;
+}
+nav li a{
+    transition: all 0.3s;
+}
+nav li:hover a{
+    color: #fcdc00;
 }
 ul{
     width: 100%;
@@ -394,6 +415,7 @@ ul{
     display: flex;
     flex-wrap: nowrap;
     width: 85%;
+    transform: translateY(18%);
 }
 #inta-fotos img{
     margin: 0;
@@ -402,8 +424,129 @@ ul{
 }
 .rodape{
     background-color: #04091e;
-    width: 100%;
+    width: 100vw;
     height: 50vb;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(10%);
+}
+.rodape > section{
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.rodape > section section{
+    width: 33%;
+}
+.rodape > section input{
+    border: 0;
+    border-radius: 5px;
+    width: 80%;
+    height: 8%;
+}
+.rodape > section input::placeholder{
+    padding-left: 2%;
+    color: lightgray;
+}
+.rodape > section span{
+    display: inline-block;
+    background-color: #fcdc00;
+    width: 10%;
+    height: 8.6%;
+    position: relative;
+    top: -0%;
+    right: 6%;
+    color: black;
+    text-align: center;
+    line-height: 2;
+}
+.rodape > section p{
+    width: 85%;
+    font-size: 0.8rem;
+    color: gray;
+}
+.rodape > section ul{
+    padding: 0;
+    width: 40%;
+    justify-content: flex-start;
+}
+.rodape > section ul li{
+    margin-right: 15%;
+}
+.rodape > section ul li i{
+    position: inherit !important; 
+    opacity: 1 !important;
+    font-size: 1rem !important;
+}
+#sec-serv{
+    font-size: 1.3rem;
+    margin-top: 6%;
+    text-align: center;
+    width: 80%;
+}
+#sec-serv h2{
+    margin: 0;
+}
+#sec-serv h6{
+    margin-top: 1% !important;
+    margin-bottom: 5% !important;
+    font-weight: normal;
+    color: gray;
+}
+#sec-serv section{
+    margin-bottom: 2%;
+}
+#sec-serv div{
+    margin-right: 1%;
+    display: inline-block;
+    width: 18vw;
+    height: 25vb;
+    border: rgba(128, 128, 128, 0.2) 1px solid;
+    text-align: center;
+    transition: 0.3s all;
+}
+#sec-serv div h2{
+    font-size: 1.3rem;
+        position: relative;
+    top: 10%;
+}
+#sec-serv div p{
+    line-height: 1.5;
+    padding: 0 5%;
+    font-size: 0.9rem;
+    color: gray;
+    position: relative;
+    top: 10%;
+}
+#sec-serv div:hover{
+    background-color: #fcdc00;
+}
+#sec-serv div:hover p{
+    color: black;
+}
+#sec-serv i{
+    font-size: 2.5rem;
+    position: relative;
+    top: 10%;
+}
+.aboutImg{
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+.divAboutImg{
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    height: 28vb;
+    position: absolute;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(80%);
+    text-align: center;
+    padding: 1vb 5%;
+}
+.divAboutImg p{
+    color: gray;
+    line-height: 1.2;
 }
 #spc{
     height: 150vb !important;
